@@ -1,0 +1,96 @@
+# ProxyHunter — Scraper & Validator Proxy Otomatis Berbasis Python
+
+![ProxyHunter](https://github.com/user-attachments/assets/94136f6c-445d-44fa-ad50-d65f0830f13e)
+
+## Deskripsi
+
+[ProxyHunter](https://github.com/RozhakLabs/ProxyHunter) adalah alat yang dirancang untuk mengotomatiskan proses scraping dan validasi proxy. Dengan kemampuan threading dan dukungan untuk berbagai jenis proxy, alat ini secara efisien menemukan proxy yang berkualitas dan valid dengan cepat.
+
+Program ini menampilkan hasil dengan antarmuka yang interaktif menggunakan modul `rich`, memberikan tampilan menarik dan user-friendly saat digunakan.
+
+## Fitur
+
+- **Antarmuka Pengguna yang Intuitif**: Menampilkan informasi IP dan kota pengguna, serta menampilkan opsi menu yang jelas dan mudah digunakan.
+- **Validasi Proxy**: Mengecek keaktifan proxy yang telah di-scrape untuk memastikan proxy tersebut masih dapat digunakan.
+- **Scraping Proxy**: Mendukung scraping proxy dari berbagai situs seperti Proxyscrape, Freeproxy, Spys-Me, dan banyak lagi.
+- **Penggunaan Multithreading**: Menggunakan multithreading untuk proses scraping yang lebih cepat dan efisien.
+
+## Instalasi
+
+1. Clone repository ini:
+   
+   ```bash
+   git clone https://github.com/RozhakLabs/ProxyHunter.git
+   ```
+2. Masuk ke direktori ProxyHunter:
+   
+   ```bash
+   cd ProxyHunter
+   ```
+3. Install dependencies yang diperlukan:
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Cara Penggunaan
+
+1. Jalankan program dengan perintah berikut:
+   
+   ```bash
+   python Run.py
+   ```
+2. Anda akan disajikan berbagai pilihan menu untuk melakukan scraping dan validasi proxy.
+3. Ikuti petunjuk yang muncul di layar untuk memilih sumber scraping dan simpan hasilnya ke file yang Anda inginkan.
+4. Gunakan opsi validasi untuk memastikan proxy yang telah di-scrape masih aktif.
+
+## Contoh Penggunaan
+
+Misalnya, untuk melakukan scraping proxy dari Proxyscrape dan menyimpannya dalam file `Penyimpanan/Proxy.txt`:
+
+- Pilih opsi `01` dan masukkan nama file `Penyimpanan/Proxy.txt`.
+- Tunggu hingga proses scraping selesai.
+- Proxy yang aktif akan disimpan di file yang telah Anda tentukan.
+
+## Tangkapan Layar
+
+![FunPic_20240901-1](https://github.com/user-attachments/assets/e43aab98-ecc9-49f9-be7a-b2de92dec447)
+
+![FunPic_20240901-2](https://github.com/user-attachments/assets/90492b39-6630-479e-9f6e-e97c4aa106f1)
+
+## Masalah Umum dan Solusi
+
+1. **Koneksi Terputus atau Lambat**
+   - **Masalah**: Jika koneksi internet Anda lambat atau tidak stabil, proses pengumpulan atau pengecekan proxy bisa gagal atau memakan waktu lama.
+   - **Solusi**: Pastikan koneksi internet Anda stabil. Anda juga dapat mengurangi jumlah `max_workers` dalam `ThreadPoolExecutor` untuk mengurangi beban pada koneksi.
+2. **Tidak Ada Proxy yang Valid Ditemukan**
+   - **Masalah**: Setelah menjalankan scraper, tidak ada proxy yang valid ditemukan.
+   - **Solusi**: Coba gunakan sumber lain untuk scraping atau cek apakah sumber tersebut masih aktif dan menyediakan proxy yang valid.
+3. **Pemblokiran IP oleh Situs Penyedia Proxy**
+   - **Masalah**: Jika mengirim terlalu banyak permintaan dalam waktu singkat dapat menyebabkan IP Anda diblokir oleh situs penyedia proxy.
+   - **Solusi**: Tambahkan jeda waktu (delay) antara setiap permintaan atau gunakan proxy yang berbeda untuk setiap permintaan scraping.
+
+## Dukungan
+
+Jika Anda merasa proyek ini bermanfaat dan ingin mendukung pengembangan lebih lanjut, Anda dapat memberikan dukungan melalui:
+
+- [Trakteer](https://trakteer.id/rozhak_official/tip)
+- [PayPal](https://paypal.me/rozhak9)
+
+## Peringatan
+
+Menggunakan aplikasi ini untuk mengumpulkan dan memeriksa proxy dalam jumlah besar dapat menghabiskan banyak bandwidth. Pastikan koneksi internet Anda memadai untuk menghindari masalah selama proses.
+
+Aplikasi ini dibuat untuk tujuan edukasi. Kami tidak bertanggung jawab atas penyalahgunaan atau konsekuensi yang mungkin terjadi akibat penggunaan aplikasi ini. Gunakan dengan bijak dan sesuai dengan aturan yang berlaku.
+
+## Kontribusi
+
+Kontribusi sangat diterima! Jika Anda memiliki saran, perbaikan, atau fitur baru yang ingin ditambahkan, silakan buat pull request atau buka issue di repository ini.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah lisensi [MIT License](LICENSE).
+
+## 
+
+Dikembangkan dengan ❤️ oleh [Rozhak](https://github.com/RozhakLabs). Nikmati pengumpulan proxy yang cepat dan mudah dengan ProxyHunter!
