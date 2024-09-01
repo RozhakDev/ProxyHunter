@@ -1,6 +1,6 @@
 # ProxyHunter — Scraper & Validator Proxy Otomatis Berbasis Python
 
-![ProxyHunter](https://github.com/user-attachments/assets/94136f6c-445d-44fa-ad50-d65f0830f13e)
+![ProxyHunter](https://github.com/user-attachments/assets/dc55596f-adc8-4fe8-aaab-0898af0ee546)
 
 ## Deskripsi
 
@@ -55,8 +55,6 @@ Misalnya, untuk melakukan scraping proxy dari Proxyscrape dan menyimpannya dalam
 ## Tangkapan Layar
 
 ![FunPic_20240901-1](https://github.com/user-attachments/assets/e43aab98-ecc9-49f9-be7a-b2de92dec447)
-
-![FunPic_20240901-2](https://github.com/user-attachments/assets/90492b39-6630-479e-9f6e-e97c4aa106f1)
 
 ## Masalah Umum dan Solusi
 
